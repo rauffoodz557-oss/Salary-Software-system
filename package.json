@@ -12,7 +12,8 @@
     },
     "directories": {
       "output": "dist"
-    }
+    },
+    "publish": null
   },
   "devDependencies": {
     "electron": "^28.2.0",
