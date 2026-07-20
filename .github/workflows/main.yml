@@ -25,12 +25,9 @@ jobs:
 
     - name: Build EXE File
       run: npm run build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload EXE Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Windows-EXE-App
-        path: dist/
+        path: dist/*.exe
